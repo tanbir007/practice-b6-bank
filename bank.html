@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-lime-100">
+    <h1 class="text-5xl text-center my-5">Lets Have some <span class="text-rose-900 font-bold ">Money</span></h1>
+    <section class="grid grid-cols-3 gap-4 mx-auto w-2/3">
+        <div class="p-5 bg-orange-400">
+            <h2>Deposit</h2>
+            <h3 class="text-4xl">$<span id="deposit-amount">00</span></h3>
+        </div>
+        <div class="p-5 bg-amber-400">
+            <h2>Withdraw</h2>
+            <h3 class="text-4xl">$<span id="withdraw-amount">00</span></h3>
+        </div>
+        <div class="p-5 bg-lime-500">
+            <h2>Balance</h2>
+            <h3 class="text-4xl">$<span id="balance-amount">00</span></h3>
+        </div>
+        <div class="flex flex-row gap-10 ">
+            <div class="p-10 bg-amber-700 ">
+                <h2>Please deposit</h2>
+                <input id="deposit-field" class="my-3" type="number" placeholder="$deposit amount">
+                <button id="deposit-btn" class="bg-rose-900 rounded p-2">Deposit</button>
+
+            </div>
+            <div class="p-10 bg-lime-700 ">
+                <h2>Please Withdraw</h2>
+                <input id="withdraw-field" class="my-3" type="number" placeholder="$deposit amount ">
+                <button id="withdraw-btn" class="bg-rose-900 rounded p-2">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="./utilities.js"></script>
+    <!-- <script src="./bank.js"></script>
+    <script src="./withdraw.js"></script> -->
+</body>
+
+</html>
